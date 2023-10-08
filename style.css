@@ -1,0 +1,137 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    background-color: #181818;
+}
+
+/* ================================================= */
+/* ==================== Top bar ==================== */
+/* ================================================= */
+#top-bar {
+    overflow: hidden;
+    height: 6%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 5px 25px;
+    background-color: #0a0a0a;
+    z-index: 2;
+}
+
+#brand-name {
+    float: left;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    align-self: center;
+    font-weight: 300;
+    padding: 0px 25px;
+}
+
+#openNav {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#logo-top {
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    position: absolute;
+}
+
+/* ================================================= */
+/* ================= Side nav menu ================= */
+/* ================================================= */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #131313;
+    overflow: hidden;
+    transition: 0.4s ease;
+    display: flex;
+    z-index: 99;
+  }
+
+/* ================= Menu sections ================= */
+#side-left {
+    height: 100%;
+    width: 3.75%;
+    background-color: #181818;
+    padding: 25px 0px;
+    position: relative;
+}
+
+#side-mid {
+    height: 100%;
+    width: 16.75%;
+    background-color: #141414;
+    position: relative;
+}
+#side-mid p {
+    padding: 0px 10px;
+    margin: 15% 35px;
+    font-size: 20px;
+    color: #969696;
+    display: block;
+}
+#side-mid a {
+    padding: 0px 10px;
+    margin: 25px 35px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #969696;
+    display: block;
+    transition: 0.1s ease;
+}
+#side-mid a:hover {
+    color: white;
+}
+#side-mid .active {
+    border-style: hidden hidden hidden solid;
+    color: white;
+}
+
+#side-right {
+    height: 100%;
+    width: 79.5%;
+    position: relative;
+}
+
+/* ==================== Buttons ==================== */
+#side-left .spin {
+    background-color: transparent;
+    border: solid white;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    top: 10.75%;
+    border-radius: 50%;
+    font-size: large;
+    width: 40px;
+    height: 40px;
+}
+
+#side-left img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 60px;
+}
