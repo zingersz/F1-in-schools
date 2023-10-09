@@ -69,7 +69,7 @@ body {
 /* ================= Menu sections ================= */
 #side-left {
     height: 100%;
-    width: 3.75%;
+    width: 3.75vmax;
     background-color: #181818;
     padding: 25px 0px;
     position: relative;
@@ -83,7 +83,7 @@ body {
 
 #side-mid {
     height: 100%;
-    width: 16.75%;
+    width: 16.75vmax;
     background-color: #141414;
     position: relative;
 }
@@ -113,7 +113,7 @@ body {
 
 #side-right {
     height: 100%;
-    width: 79.5%;
+    width: 79.5vmax;
     position: relative;
 }
 
