@@ -46,7 +46,7 @@ body {
 #logo-top {
     top: 50%;
     left: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-52.5%, -50%);
     position: absolute;
 }
 
@@ -62,10 +62,9 @@ body {
     left: 0;
     background-color: #131313;
     overflow: hidden;
-    transition: 0.4s ease;
     display: flex;
     z-index: 99;
-  }
+}
 
 /* ================= Menu sections ================= */
 #side-left {
@@ -74,6 +73,12 @@ body {
     background-color: #181818;
     padding: 25px 0px;
     position: relative;
+}
+#side-left img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(0%, 50%);
 }
 
 #side-mid {
@@ -126,12 +131,4 @@ body {
     font-size: large;
     width: 40px;
     height: 40px;
-}
-
-#side-left img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60px;
-    height: 60px;
 }
