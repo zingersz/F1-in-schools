@@ -48,6 +48,8 @@ body {
     left: 50%;
     transform: translate(-52.5%, -50%);
     position: absolute;
+    width: 70%;
+    height: 70%;
 }
 
 /* ================================================= */
@@ -79,6 +81,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     transform: translate(0%, 25%);
+    width: 80%;
 }
 
 #side-mid {
@@ -123,12 +126,9 @@ body {
     border: solid white;
     color: white;
     cursor: pointer;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    top: 15.25%;
     border-radius: 50%;
     font-size: large;
     width: 40px;
     height: 40px;
+    transform: translate(150%, 150%);
 }
