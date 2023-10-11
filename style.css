@@ -106,9 +106,7 @@ body {
     display: block;
     transition: 0.1s ease;
 }
-#side-mid a:hover {
-    color: white;
-}
+#side-mid a:hover {color: white;}
 #side-mid .active {
     border-style: hidden hidden hidden solid;
     color: white;
@@ -129,8 +127,8 @@ body {
     cursor: pointer;
     border-radius: 50%;
     font-size: large;
-    width: 40px;
-    height: 40px;
+    width: 2.5vw;
+    height: 2.5vw;
     position: absolute;
     left: 50%;
     top: 17.5%;
