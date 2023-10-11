@@ -131,8 +131,8 @@ body {
     height: 2.5vw;
     position: absolute;
     left: 50%;
-    top: 17.5%;
-    transform: translate(-50%, -50%);
+    top: 15.5vh;
+    transform: translate(-50%, 0%);
 }
 
 /* ==================== Socials ==================== */
