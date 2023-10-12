@@ -4,4 +4,3 @@ todo:
  - cool landing page
  - About page
  - idk
- - loading screen

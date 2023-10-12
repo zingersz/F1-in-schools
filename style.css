@@ -44,9 +44,8 @@ body {
 #logo-top {
     top: 50%;
     left: 50%;
-    transform: translate(-52.5%, -50%);
+    transform: translate(-100%, -50%);
     position: absolute;
-    width: 70%;
     height: 70%;
 }
 
@@ -176,3 +175,37 @@ body {
 #content {
     margin-top: 6vh;
 }
+
+
+/* ================================================= */
+/* ==================== Loader ===================== */
+/* ================================================= */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 10%;
+    transform: translate(-50%,-50%);
+    animation: breathe 1.5s linear infinite;
+}
+  
+@keyframes breathe {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+  
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+  
+@keyframes animatebottom { 
+    from{ bottom:-500px; opacity:0; } 
+    to{ bottom:0; opacity:1 }
+}
+  
+#web-page {display: none;}
