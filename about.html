@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a9df822932.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="style.css">
@@ -21,10 +19,11 @@
             padding: 0;
         }
         #team-text {
-            border-right: 5px solid #da373e;
+            border-right: 5px solid;
+            border-image: linear-gradient(transparent,#da373e, transparent) 10;
             flex-grow: 1;
             font-size: 5rem;
-            padding: 10vh 0 10vh 5vw;
+            padding: 7vh 0 7vh 5vw;
             display: flex;
         }
         #team-members {
@@ -36,6 +35,8 @@
             display: flex;
             flex-direction: row;
             margin: 1.75vh;
+            transform: perspective(1500px);
+            transform-style: preserve-3d;
         }
 
         .card {
@@ -47,6 +48,7 @@
             border-radius: 1rem;
             margin: 0% 1%;
             display: flex;
+            transition: 0.5s ease;
         }
         .card:after {  
             content: "";
@@ -58,7 +60,7 @@
             transition: top, opacity;
             transition-duration: 600ms;
             transition-timing-function: ease;
-            background-image: linear-gradient(transparent,#da373e, transparent);
+            background-image: linear-gradient(transparent,#edc967, transparent);
             opacity: 0;
         }
         .card:hover:after {
@@ -78,11 +80,23 @@
             border-radius: 1rem 0 0 1rem;
             display: flex;
         }
+        .card h4 {
+            opacity: 0.6;
+            color: #f5f5f5;
+            font-weight: lighter;
+        }
+        .card:hover {
+            cursor: pointer;
+            transform: rotateX(20deg);
+        }
         
-        #values {
+        #ethos {
             width: 100%;
             height: 20vh;
-            background-color: #d5d5d5;
+            background-color: #f5f5f5;
+        }
+        #ethos h1 {
+            color: #0a0a0a;
         }
     </style>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
@@ -127,61 +141,63 @@
             </div>
         </div>
         <div id="content">
+            <div id="ethos">
+                <h1>OUR ETHOS</h1>
+            </div>
             <div id="values">
                 <p>YEET</p>
             </div>
             <div id="team">
-                <h1 id="team-text">OUR<br>TEAM</h1>
+                <h1 id="team-text">MEET THE TEAM</h1>
                 <div id="team-members">
                     <div class="row">
-                        <div class="card">
+                        <div class="card" id="@.com">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h3>Product Manager</h3>
+                                <h4>Team Manager</h4>
                                 <h1>David</h1>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="@.com">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h3>Product Manager</h3>
+                                <h4>Manufacturing Engineer</h4>
                                 <h1>Anh Tuan</h1>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="@.com">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h3>Product Manager</h3>
+                                <h4>Design Engineer</h4>
                                 <h1>Taegyu</h1>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="card">
+                        <div class="card" id="@.com">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h3>Product Manager</h3>
+                                <h4>Design Engineer</h4>
                                 <h1>Rishi</h1>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="@.com">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h3>Product Manager</h3>
+                                <h4>Graphic Designer</h4>
                                 <h1>Ryan</h1>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="card" id="@.com">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h3>Product Manager</h3>
+                                <h4>Marketting Manager</h4>
                                 <h1>Gia Phu</h1>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="commitments"></div>
             <div id="medias"></div>
         </div>
     </div>
