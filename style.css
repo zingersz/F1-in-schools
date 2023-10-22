@@ -5,9 +5,17 @@
 }
 
 body {
-    margin: 0;
     background-color: #181818;
+    overflow-x: hidden;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+::-webkit-scrollbar {display: none}
 
 /* ================================================= */
 /* ==================== Top bar ==================== */
@@ -173,7 +181,8 @@ body {
 /* ================= Main content ================== */
 /* ================================================= */
 #content {
-    margin-top: 6vh;
+    margin-top: 7vh;
+    padding: 0;
 }
 
 
@@ -196,16 +205,16 @@ body {
     100% {opacity: 0;}
 }
   
-.animate-bottom {
+.web {
     position: relative;
-    animation-name: animatebottom;
-    animation-duration: 2s;
+    animation-name: appear;
+    animation-duration: 3s;
     animation-timing-function: ease;
 }
   
-@keyframes animatebottom { 
-    from{ bottom:-500px; opacity:0; } 
-    to{ bottom:0; opacity:1 }
+@keyframes appear { 
+    from{opacity:0} 
+    to{opacity:1}
 }
   
 #web-page {display: none;}
