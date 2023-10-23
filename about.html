@@ -25,6 +25,7 @@
             font-size: 5rem;
             padding: 7vh 0 7vh 5vw;
             display: flex;
+            letter-spacing: -2px;
         }
         #team-members {
             flex-direction: column;
@@ -92,13 +93,40 @@
         
         #ethos {
             width: 100%;
-            height: 20vh;
+            height: 45vh;
             background-color: #f5f5f5;
             display: flex;
-            padding: 1%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
-        #ethos :is(h1, p) {
+        #ethos h1 {
             color: #0a0a0a;
+            height: min-content;
+            text-align: center;
+        }
+        #ethos p {
+            color: #0a0a0a;
+            width: 45%;
+            line-height: 225%;
+            height: min-content;
+            text-align: justify;
+            text-align-last: center;
+            border: 5px solid #edc967;
+            padding: 1% 2%;
+            letter-spacing: 0.25px;
+            border-radius: 15px;
+        }
+
+        #identity {
+            width: 100vw;
+            height: 40vh;
+            display: flex;
+        }
+        #identity img {
+            width: 50vw;
+            height: 40vh;
+            display: flex;
         }
     </style>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
@@ -144,20 +172,12 @@
         </div>
         <div id="content">
             <div id="ethos">
-                <h1>OUR ETHOS</h1>
                 <p>
-                    At Hoa Sen, the essence of our ethos lies in the power of unity. 
-                    We strive to embody a team that not only seeks constant improvement 
-                    but also demonstrates the profound impact of collaboration. 
-                    We believe in the strength of unity, where every member's voice is 
-                    invaluable, playing a crucial role in our success both on and off the race 
-                    track. Our success is a testament to the collective effort, where the sum 
-                    is indeed greater than its parts. Together, we continue to forge our path, 
-                    with our sights set firmly on the pinnacle of motorsport excellence.
+                    At Hoa Sen, our commitment to unity, relentless pursuit of enhancement, and collaborative spirit is our guiding principle. 
+                    Our success is a testament to the synergy of our collective effort, where the whole is indeed greater than the sum of its parts. 
+                    Together, we aim to work towards the pinnacle of motorsport excellence. 
                 </p>
-            </div>
-            <div id="values">
-                <p>YEET</p>
+                <h1>OUR VALUES</h1>
             </div>
             <div id="team">
                 <h1 id="team-text">MEET THE TEAM</h1>
@@ -203,12 +223,15 @@
                         <div class="card">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h4>Marketting Manager</h4>
+                                <h4>Marketing Manager</h4>
                                 <h1>Gia Phu</h1>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="identity">
+                <img src="images/lotus.avif">
             </div>
             <div id="medias"></div>
         </div>
