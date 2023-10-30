@@ -131,6 +131,7 @@
             justify-content: center;
         }
         .value {
+            position: relative;
             width: 25vw;
             height: 100%;
             display: flex;
@@ -140,8 +141,12 @@
             box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.19);
             background-color: #fff;
             flex-direction: column;
+            cursor: pointer;
         }
+        .value:hover img {opacity: .2;}
+        .value:hover p {opacity: 1;}
         .value img {
+            transition: .3s ease;
             width: 100%;
             height: 80%;
         }
@@ -149,6 +154,20 @@
             align-self: center;
             justify-self: flex-end;
             color: #0a0a0a;
+        }
+        .value p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -75%);
+            width: 20vw;
+            text-align: justify;
+            text-align-last: center;
+            color: black;
+            line-height: 225%;
+            letter-spacing: 0.25px;
+            opacity: 0;
+            transition: .3s ease;
         }
 
         #identity {
@@ -215,21 +234,42 @@
                 <div id="values">
                     <div class="value">
                         <img src="images/respect.jpg">
+                        <p>
+                            We uphold sportsmanship and integrity, regardless of the outcome on or off the race track. By celebrating and learning from the success of others, we can identify 
+                            areas where we can improve as a team. We actively listen and work diligently to implement small changes that will contribute to the team's overall success in the 
+                            long term.
+                        </p>
                         <h2>Respect</h2>
                     </div>
                     <div class="value">
                         <img src="images/passion.jpg">
+                        <p>
+                            We are deeply passionate about what we do, and every individual plays a significant role in Hoa Sen Motorsports. At Hoa Sen, we embrace the concept of "Kaizen", 
+                            which signifies continuous improvement. Perfection as an ideal may not be attainable, but we are here to get as close to it as we can.
+                        </p>
                         <h2>Passion</h2>
                     </div>
                     <div class="value">
                         <img src="images/determination.jpg">
+                        <p>
+                            Together, we can achieve success by enduring the hardships and challenges that arise throughout the entire process. From car design to discussing physics, everything 
+                            is achievable if we remain focused and climb the ladder of success. At Hoa Sen, we are not here to simply participate; we are here to dominate.
+                        </p>
                         <h2>Determination</h2>
                     </div>
                     <div class="value">
                         <img src="images/humility.jpg">
+                        <p>
+                            Humility is a cornerstone in shaping a productive and positive work atmosphere within Hoa Sen. We fervently endorse the recognition of each individual's integral 
+                            role in the company's triumph and the embracement of different perspectives. At Hoa Sen, it encourages continuous learning and acknowledgements of the potential 
+                            for development.
+                        </p>
                         <h2>Humility</h2>
                     </div>
                 </div>
+            </div>
+            <div id="identity">
+                <img src="images/lotus.avif">
             </div>
             <div id="team">
                 <h1 id="team-text">MEET THE TEAM</h1>

@@ -96,20 +96,20 @@ body, html {
     position: relative;
 }
 #side-mid p {
-    padding: 0 0.5vmax;
+    padding: 0 .5vmax;
     margin: 2.5vmax 1.5vmax;
     font-size: 1.5vmax;
     color: #969696;
     display: block;
 }
 #side-mid a {
-    padding: 0 0.5vmax;
+    padding: 0 .5vmax;
     margin: 1.5vmax 1.5vmax;
     text-decoration: none;
     font-size: 1.25vmax;
     color: #969696;
     display: block;
-    transition: 0.1s ease;
+    transition: .1s ease;
 }
 #side-mid a:hover {color: white;}
 #side-mid .active {
@@ -141,7 +141,7 @@ body, html {
 
 .spin:hover{
     animation-name: load;
-    animation-duration: 0.5s;
+    animation-duration: .5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -171,11 +171,11 @@ body, html {
 
 .social-row a {
     padding: 0 10%;
-    opacity: 0.2;
-    transition: 0.2s ease;
+    opacity: .2;
+    transition: .2s ease;
 }
 
-.social-row a:hover {opacity: 0.7;}
+.social-row a:hover {opacity: .7;}
 
 /* ================================================= */
 /* ================= Main content ================== */
