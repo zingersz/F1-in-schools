@@ -125,7 +125,6 @@ body, html {
 
 /* ==================== Buttons ==================== */
 .spin {
-    display: block;
     background-color: transparent;
     border: solid white;
     cursor: pointer;
@@ -134,9 +133,9 @@ body, html {
     text-align: center;
     width: 2.5vw;
     height: 2.5vw;
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 15.5vh;
+    top: 5.5vh;
     transform: translate(-50%, 0%);
 }
 
