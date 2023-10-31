@@ -130,7 +130,8 @@ body, html {
     border: solid white;
     cursor: pointer;
     border-radius: 50%;
-    font-size: large;
+    font-size: 2vh;
+    text-align: center;
     width: 2.5vw;
     height: 2.5vw;
     position: absolute;
