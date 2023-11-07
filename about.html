@@ -71,8 +71,8 @@
         #ethos {
             height: 93vh;
             width: 100%;
-            background-color: #fff;
-            padding-bottom: 5vh;
+            background: linear-gradient(white 90%, #C3CBDC);
+            padding-bottom: 7.5vh;
         }
         #ethos-summary {
             width: 100%;
@@ -147,18 +147,18 @@
             font-size: 0.8vw;
             font-weight: 600;
         }
-        /**/
+
         #identity {
             display: flex;
             width: 100vw;
-            height: 50vh;
             display: flex;
             size: cover; 
-            background: linear-gradient(white,#C3CBDC);
+            background: radial-gradient(closest-side, white 50%,#C3CBDC);
+            box-shadow: 0 0 30px 10px #C3CBDC inset;
             align-items: center;
             justify-content: center;
-            border-top: 2px #EAEAEA solid;
-            padding: 5vh 0 15vh;
+            padding: 15vh 0;
+            flex-direction: column;
         }
         #identity h1 {
             line-height: 200%;
@@ -169,11 +169,31 @@
             font-family: 'Italiana', sans-serif; 
             font-weight: light; 
             font-style: italic;
-            transform: translateY(-2.5%);
         }
         #identity span {
             font-family: 'Italiana', sans-serif;
             font-style: italic;
+        }
+        #identity button {
+            color: black; 
+            background: transparent; 
+            font-size: 1.5vw; 
+            padding: 1.25% 5%; 
+            margin-top: 3vh;
+            transition: .2s ease;
+        }
+        #identity button:hover {
+            border-radius: 25px; 
+            cursor: pointer;
+            font-weight: bolder;
+            box-shadow: 0 0 20px 2.5px #888888;
+        }
+        
+        #blogs {
+            display: flex;
+            width: 100vw;
+            align-items: center;
+            justify-content: center;
         }
     </style>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
@@ -264,15 +284,18 @@
                 </div>
             </div>
             <div id="identity">
-                <img src="images/logo.png" style="height: 30vh;">
-                <h1>
-                    Driven by
-                    <span style="color: #da373e">Determination</span>
-                    <br>&nbsp; &nbspFueled by 
-                    <span style="color: #edc967">Passion</span>
-                    <br>&nbsp; &nbsp;&nbsp; &nbsp;  United in 
-                    <span style="color: gray">Respect</span>
-                </h1>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="images/logo.png" style="height: 30vh;">
+                    <h1>
+                        Driven by
+                        <span style="color: #da373e">Determination</span>
+                        <br>&nbsp;&nbsp;Fueled by 
+                        <span style="color: #edc967">Passion</span>
+                        <br>&nbsp;&nbsp;&nbsp;&nbsp;United in 
+                        <span style="color: gray">Respect</span>
+                    </h1>
+                </div>
+                <button>More about our identity</button>
             </div>
             <div id="team">
                 <h1 id="team-text">MEET THE TEAM</h1>
@@ -325,7 +348,9 @@
                     </div>
                 </div>
             </div>
-            <div id="medias"></div>
+            <div id="blogs">
+                <h1 style="text-align: right; font-size: 3vw;">Check out our blogs</h1>
+            </div>
         </div>
     </div>
 </body>
