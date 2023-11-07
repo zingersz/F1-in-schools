@@ -117,12 +117,13 @@
             margin: 0 1%;
             margin-bottom: 2%;
             box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.19);
-            background-color: #fff;
+            background-color: #131313;
             flex-direction: column;
-            cursor: pointer;
             overflow: hidden;
+            justify-content: start;
+            align-items: center;
         }
-        .value:hover img {opacity: .2;transform: scale(1.6)}
+        .value:hover img {opacity: .4;transform: scale(1.6)}
         .value:hover p {opacity: 1;}
         .value img {
             transition: 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -132,44 +133,47 @@
         .value h2 {
             align-self: center;
             justify-self: flex-end;
-            color: #0a0a0a;
             font-size: 1.5vw;
         }
         .value p {
-            align-self: center;
-            justify-self: center;
             position: absolute;
-            top: 10%;
             width: 20vw;
             text-align: justify;
             text-align-last: center;
-            color: black;
             line-height: 300%;
             letter-spacing: 0.25px;
             opacity: 0;
             transition: .5s ease;
             font-size: 0.8vw;
+            font-weight: 600;
         }
-
+        /**/
         #identity {
             display: flex;
             width: 100vw;
             height: 50vh;
             display: flex;
-            size: cover;
-            background-color: white;
+            size: cover; 
+            background: linear-gradient(white,#C3CBDC);
             align-items: center;
             justify-content: center;
             border-top: 2px #EAEAEA solid;
-            border-bottom: 2px #EAEAEA solid;
-            flex-direction: column;
             padding: 5vh 0 15vh;
         }
-        #identity h1 {line-height: 150%;letter-spacing: 3px;}
-        #identity span {
+        #identity h1 {
+            line-height: 200%;
+            letter-spacing: 3px;
+            text-align: start; 
+            font-size: 3vw; 
+            color: black; 
             font-family: 'Italiana', sans-serif; 
-            font-weight: bold; 
-            font-style: oblique;
+            font-weight: light; 
+            font-style: italic;
+            transform: translateY(-2.5%);
+        }
+        #identity span {
+            font-family: 'Italiana', sans-serif;
+            font-style: italic;
         }
     </style>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
@@ -260,15 +264,15 @@
                 </div>
             </div>
             <div id="identity">
-                <h1 style="text-align: start; font-size: 3vw; color: black; font-family: 'Italiana', sans-serif; font-weight: light; font-style: oblique;">
+                <img src="images/logo.png" style="height: 30vh;">
+                <h1>
                     Driven by
                     <span style="color: #da373e">Determination</span>
-                    <br>&nbsp; &nbsp; &nbsp; Fueled by 
+                    <br>&nbsp; &nbspFueled by 
                     <span style="color: #edc967">Passion</span>
-                    <br>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;  United in 
+                    <br>&nbsp; &nbsp;&nbsp; &nbsp;  United in 
                     <span style="color: gray">Respect</span>
                 </h1>
-                <img src="images/logo.png" style="height: 30vh;">
             </div>
             <div id="team">
                 <h1 id="team-text">MEET THE TEAM</h1>
