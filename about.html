@@ -72,6 +72,7 @@
             height: 93vh;
             width: 100%;
             background-color: #fff;
+            padding-bottom: 5vh;
         }
         #ethos-summary {
             width: 100%;
@@ -138,35 +139,30 @@
             align-self: center;
             justify-self: center;
             position: absolute;
-            top: 15%;
+            top: 10%;
             width: 20vw;
             text-align: justify;
             text-align-last: center;
             color: black;
-            line-height: 250%;
+            line-height: 300%;
             letter-spacing: 0.25px;
             opacity: 0;
             transition: .5s ease;
             font-size: 0.8vw;
         }
 
-        #quote {
+        #identity {
+            display: flex;
             width: 100vw;
             height: 50vh;
             display: flex;
-            background-image: url(images/lotus.jpg);
             size: cover;
-            box-shadow: 0 0 20px 20px white inset;
+            background-color: white;
             align-items: center;
             justify-content: center;
-        }
-
-        #logo-explained {
-            display: flex;
-            width: 100vw;
-            height: 50vh;
-            padding-top: 10vh;
-            background-color: white;
+            border-top: 2px #EAEAEA solid;
+            flex-direction: column;
+            padding: 10vh 0;
         }
     </style>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
@@ -256,10 +252,12 @@
                     </div>
                 </div>
             </div>
-            <div id="quote">
-                <h1 style="text-align: center; font-size: 3.5vw; color: rgba(0, 0, 0, 0.5); font-family: 'Italiana', sans-serif; font-weight: light; font-style: oblique;">Defining speed since 2023</h1>
+            <div id="identity">
+                <h1 style="text-align: center; font-size: 3.5vw; color: black; font-family: 'Italiana', sans-serif; font-weight: light; font-style: oblique;">
+                    "Defining <span style="color: #edc967; font-family: 'Italiana', sans-serif; font-weight: bold; font-style: oblique;">speed</span> since 2023"
+                </h1>
+                <img src="images/passion.jpg" style="height: 50vh;">
             </div>
-            <div id="logo-explained">asdasdad</div>
             <div id="team">
                 <h1 id="team-text">MEET THE TEAM</h1>
                 <div id="team-members">
