@@ -153,7 +153,7 @@
             width: 100vw;
             display: flex;
             size: cover; 
-            background: radial-gradient(closest-side, white 50%,#C3CBDC);
+            background: radial-gradient(closest-side, white 55%,#C3CBDC);
             box-shadow: 0 0 30px 10px #C3CBDC inset;
             align-items: center;
             justify-content: center;
@@ -174,19 +174,21 @@
             font-family: 'Italiana', sans-serif;
             font-style: italic;
         }
-        #identity button {
+        #identity a {
             color: black; 
             background: transparent; 
             font-size: 1.5vw; 
             padding: 1.25% 5%; 
             margin-top: 3vh;
             transition: .2s ease;
+            border: 2px solid black;
+            text-decoration: none;
         }
-        #identity button:hover {
+        #identity a:hover {
             border-radius: 25px; 
             cursor: pointer;
             font-weight: bolder;
-            box-shadow: 0 0 20px 2.5px #888888;
+            box-shadow: 0 0 30px 1.5px #999;
         }
         
         #blogs {
@@ -295,7 +297,7 @@
                         <span style="color: gray">Respect</span>
                     </h1>
                 </div>
-                <button>More about our identity</button>
+                <a href="blogs/identity-explained.html">More about our identity</a>
             </div>
             <div id="team">
                 <h1 id="team-text">MEET THE TEAM</h1>
