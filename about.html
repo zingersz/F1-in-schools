@@ -13,16 +13,17 @@
     <style>
         #team {
             width: 100vw;
-            height: 65vh;
             background-color: #1a1a1a;
             align-items: center;
+            justify-content: center;
             display: flex;
+            padding: 5vh 0;
         }
         #team-text {
             border-right: 5px solid;
             border-image: linear-gradient(transparent,#da373e, transparent) 10;
             font-size: 4.5vw;
-            padding: 7vh 5vw 7vh 5vw;
+            padding: 7vh 5vw;
             display: flex;
             letter-spacing: -2px;
             max-width: 12.5vw;
@@ -30,22 +31,22 @@
         #team-members {
             flex-direction: column;
             display: flex;
-            padding-left: 4vw;
+            flex: 1;
+            justify-content: center;
         }
         .row {
             display: flex;
-            margin: 1.75vh;
-            justify-content: center; /*change?*/
+            margin: 1.75vh 0;
+            justify-content: center;
         }
         .card {
-            min-width: 22vw;
+            min-width: 20vw;
             height: 22.5vh;
             position: relative;
             background: linear-gradient(to right, #000000, #404040);
             border-radius: 7.5px;
-            margin: 0% 1%;
+            margin: 1% 2.5%;
             display: flex;
-            transition: 0.5s ease;
             overflow: hidden;
         }
         .card-content {  
@@ -66,24 +67,17 @@
             font-weight: lighter;
             font-size: 1vw;
         }
-        .card h1 {font-size:2vw}
+        .card h1 {font-size:1.75vw}
         
-        #ethos {
-            height: 93vh;
-            width: 100%;
-            background: linear-gradient(white 90%, #C3CBDC);
-            padding-bottom: 7.5vh;
-        }
+        #ethos {width: 100%;}
         #ethos-summary {
             width: 100vw;
-            height: 45vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
         #ethos-summary h1 {
-            color: #0a0a0a;
             height: min-content;
             text-align: center;
             font-size: 5vh;
@@ -91,43 +85,47 @@
             letter-spacing: -1.5px;
         }
         #ethos-summary p {
-            color: black;
             width: 45%;
             line-height: 225%;
             height: min-content;
             text-align: justify;
             text-align-last: center;
-            border-top: 5px solid #edc967;
+            border-top: 2px solid;
+            border-image: linear-gradient(to left, transparent,#edc967, transparent) 10;
             padding: 1% 2%;
             letter-spacing: 0.25px;
             font-size: 1vw;
         }
         #values {
-            width: 100%;
-            height: 48vh;
+            width: 100vw;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
+        }
+        .value {display: flex; width: 80%;}
+        .value p {width: 50%; line-height: 250%;}
+        .value h1 {
+            width: 10%;
+            padding-right: 25%;
         }
 
         #identity {
             display: flex;
             width: 100vw;
-            display: flex;
-            size: cover; 
-            background: radial-gradient(closest-side, white 55%,#C3CBDC);
-            box-shadow: 0 0 30px 10px #C3CBDC inset;
             align-items: center;
             justify-content: center;
             padding: 15vh 0;
             flex-direction: column;
+            border-bottom: 2px solid;
+            border-top: 2px solid;
+            border-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.25), transparent) 10;
         }
         #identity h1 {
             line-height: 200%;
             letter-spacing: 3px;
             text-align: start; 
-            font-size: 3vw; 
-            color: black; 
+            font-size: 3vw;
             font-family: 'Italiana', sans-serif; 
             font-weight: light; 
             font-style: italic;
@@ -137,20 +135,19 @@
             font-style: italic;
         }
         #identity a {
-            color: black; 
             background: transparent; 
             font-size: 1.5vw; 
             padding: 1.25% 5%; 
-            margin-top: 3vh;
+            margin-top: 7.5vh;
             transition: .2s ease;
-            border: 2px solid black;
+            border: 1px solid white;
             text-decoration: none;
         }
         #identity a:hover {
             border-radius: 25px; 
             cursor: pointer;
             font-weight: bolder;
-            box-shadow: 0 0 30px 1.5px #999;
+            box-shadow: 0 0 20px 1px #999;
         }
         
         #blogs {
@@ -211,18 +208,59 @@
                     </p>
                 </div>
                 <div id="values">
+                    <div class="value">
+                        <h1>Respect</h1>
+                        <p>
+                            We uphold sportsmanship and integrity, regardless of the outcome on or off the race track. 
+                            By celebrating and learning from the success of others, we can identify areas where we can 
+                            improve as a team. We actively listen and work diligently to implement small changes that will 
+                            contribute to the team's overall success in the long term.
+                        </p>
+                    </div>
+                    <div class="value">
+                        <h1>Passion</h1>
+                        <p>
+                            We are deeply passionate about what we do, and every individual plays a significant role 
+                            in Hoa Sen Motorsports. At Hoa Sen, we embrace the concept of "Kaizen," which signifies 
+                            continuous improvement. By working together with enthusiasm and an open mind, we do not 
+                            only embrace both successes and failures but persistently strive for improvement. 
+                            Perfection as an ideal may not be attainable, but we are here to get as close to it as 
+                            we can.
+                        </p>
+                    </div>
+                    <div class="value">
+                        <h1>Determination</h1>
+                        <p>
+                            We relentlessly strive for perfection, constantly innovating and learning irrespective of 
+                            the results on the track. Each team member has a crucial role to play, and together, we 
+                            can achieve success by enduring the hardships and challenges that arise throughout the 
+                            entire process. From car design to discussing physics, everything is achievable if we 
+                            remain focused and climb the ladder of success. At Hoa Sen, we are not here to simply 
+                            participate; we are here to dominate.
+                        </p>
+                    </div>
+                    <div class="value">
+                        <h1>Humility</h1>
+                        <p>
+                            Humility is a cornerstone in shaping a productive and positive work atmosphere within 
+                            Hoa Sen. We fervently endorse the recognition of each individual's integral role in the 
+                            company's triumph, the embrace of different perspectives, and the refraining from vanity 
+                            in the display of accomplishments. At Hoa Sen, it encourages continuous learning and 
+                            acknowledgements of the potential for development.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div id="identity">
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img src="images/logo.png" style="height: 30vh;">
+                    <img src="images/logo.png" style="height: 30vh;filter: invert();">
                     <h1>
                         Driven by
                         <span style="color: #da373e">Determination</span>
                         <br>&nbsp;&nbsp;Fueled by 
                         <span style="color: #edc967">Passion</span>
                         <br>&nbsp;&nbsp;&nbsp;&nbsp;United in 
-                        <span style="color: gray">Respect</span>
+                        <span style="color: lightgray">Respect</span>
                     </h1>
                 </div>
                 <a href="news/identity-explained.html">More about our identity</a>
@@ -234,14 +272,14 @@
                         <div class="card">
                             <img src="images/david.jpg">
                             <div class="card-content">
-                                <h4>Team Manager</h4>
+                                <h4>Manager</h4>
                                 <h1>David</h1>
                             </div>
                         </div>
                         <div class="card">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h4>Manufacturing Engineer</h4>
+                                <h4>Engineer</h4>
                                 <h1>Anh Tuan</h1>
                             </div>
                         </div>
@@ -257,14 +295,14 @@
                         <div class="card">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h4>Design Engineer</h4>
+                                <h4>Designer</h4>
                                 <h1>Rishi</h1>
                             </div>
                         </div>
                         <div class="card">
                             <img src="images/me.jpg">
                             <div class="card-content">
-                                <h4>Marketing Manager</h4>
+                                <h4>Strategist</h4>
                                 <h1>Gia Phu</h1>
                             </div>
                         </div>
