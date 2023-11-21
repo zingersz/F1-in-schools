@@ -11,14 +11,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <style>
-        #team {
-            width: 100vw;
-            background-color: #1B1212;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            padding: 5vh 0;
-        }
         #team-text {
             border-right: 5px solid;
             border-image: linear-gradient(transparent,#da373e, transparent) 10;
@@ -27,12 +19,6 @@
             display: flex;
             letter-spacing: -2px;
             max-width: 12.5vw;
-        }
-        #team-members {
-            flex-direction: column;
-            display: flex;
-            flex: 1;
-            justify-content: center;
         }
         .row {
             display: flex;
@@ -56,38 +42,18 @@
             align-items: center;
             width: 60%;
         }
-        .card img {
-            height: 100%;
-            width: 40%;
-            display: flex;
-        }
-        .card h4 {
-            opacity: 0.6;
-            color: #f5f5f5;
-            font-weight: lighter;
-            font-size: 1vw;
-        }
+        .card img {height: 100%; width: 40%;}
+        .card h4 {font-weight: lighter; font-size: 1vw; color: rgba(245, 245, 245,0.6);}
         .card h1 {font-size:1.75vw}
-        
-        #ethos {width: 100%; padding: 5vh 0 10vh;}
-        #ethos-summary {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
         #ethos-summary h1 {
-            height: min-content;
             text-align: center;
             font-size: 5vh;
-            margin-bottom: 3.5%;
+            margin-bottom: 5.5vh;
             letter-spacing: -1.5px;
         }
         #ethos-summary p {
             width: 45%;
             line-height: 225%;
-            height: min-content;
             text-align: justify;
             text-align-last: center;
             border-top: 2px solid;
@@ -96,34 +62,22 @@
             letter-spacing: 0.25px;
             font-size: 1vw;
         }
-        #values {
-            width: 100vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-        .value {display: flex; width: 80%; margin: 2%; justify-content: center;}
+        .value {display: flex; width: 80%; margin: 2%; justify-content: center;flex-direction: column;}
         .value p {width: 50%; line-height: 250%;}
-        .value h1 {
-            width: 10%;
-            padding-right: 15%;
-            font-size: 2.5vw;
-        }
+        .value h1 {font-size: 2.5vw;}
 
         #identity {
             background-color: #212121;
             display: flex;
             width: 100vw;
             align-items: center;
-            justify-content: center;
             padding: 15vh 0;
             flex-direction: column;
             border-bottom: 2px solid;
             border-top: 2px solid;
             border-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.25), transparent) 10;
         }
-        #identity h1 {
+        #identity h1 { /*change to "Canela Web"?*/
             line-height: 200%;
             letter-spacing: 3px;
             text-align: start; 
@@ -149,14 +103,7 @@
             border-radius: 25px; 
             cursor: pointer;
             font-weight: bolder;
-            box-shadow: 0 0 20px 1px #999;
-        }
-        
-        #blogs {
-            display: flex;
-            width: 100vw;
-            align-items: center;
-            justify-content: center;
+            box-shadow: 0 0 80px 5px #000;
         }
     </style>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
@@ -200,8 +147,8 @@
             </div>
         </div>
         <div id="content">
-            <div id="ethos">
-                <div id="ethos-summary">
+            <div id="ethos" style="width: 100%; padding: 5vh 0 10vh;">
+                <div id="ethos-summary" style="width: 100vw; display: flex; flex-direction: column; align-items: center;">
                     <h1>OUR VALUES</h1>
                     <p>
                         At Hoa Sen, our commitment to unity, our relentless pursuit of enhancement, and our collaborative spirit are our guiding principles. 
@@ -209,7 +156,7 @@
                         Together, we strive towards the pinnacle of motorsport excellence. 
                     </p>
                 </div>
-                <div id="values">
+                <div id="values" style="width: 100vw; display: flex; align-items: center; flex-direction: column;">
                     <div class="value">
                         <h1>Respect</h1>
                         <p>
@@ -223,8 +170,7 @@
                         <h1>Passion</h1>
                         <p>
                             We are deeply passionate about what we do, and every individual plays a significant role 
-                            in Hoa Sen Motorsports. At Hoa Sen, we embrace the concept of "Kaizen," which signifies 
-                            continuous improvement. By working together with enthusiasm and an open mind, we do not 
+                            in Hoa Sen Motorsports. By working together with enthusiasm and an open mind, we do not 
                             only embrace both successes and failures but persistently strive for improvement. 
                             Perfection as an ideal may not be attainable, but we are here to get as close to it as 
                             we can.
@@ -234,9 +180,7 @@
                         <h1>Determination</h1>
                         <p>
                             We relentlessly strive for perfection, constantly innovating and learning irrespective of 
-                            the results on the track. Each team member has a crucial role to play, and together, we 
-                            can achieve success by enduring the hardships and challenges that arise throughout the 
-                            entire process. From car design to discussing physics, everything is achievable if we 
+                            the results on the track. From car design to discussing physics, everything is achievable if we 
                             remain focused and climb the ladder of success. At Hoa Sen, we are not here to simply 
                             participate; we are here to dominate.
                         </p>
@@ -247,8 +191,7 @@
                             Humility is a cornerstone in shaping a productive and positive work atmosphere within 
                             Hoa Sen. We fervently endorse the recognition of each individual's integral role in the 
                             company's triumph, the embrace of different perspectives, and the refraining from vanity 
-                            in the display of accomplishments. At Hoa Sen, it encourages continuous learning and 
-                            acknowledgements of the potential for development.
+                            in the display of accomplishments.
                         </p>
                     </div>
                 </div>
@@ -267,9 +210,9 @@
                 </div>
                 <a href="news/identity-explained.html">More about our identity</a>
             </div>
-            <div id="team">
+            <div id="team" style="width: 100vw; background-color: #1B1212; align-items: center; display: flex; padding: 5vh 0;">
                 <h1 id="team-text">MEET THE TEAM</h1>
-                <div id="team-members">
+                <div id="team-members" style="flex-direction: column; display: flex; flex: 1; justify-content: center;">
                     <div class="row">
                         <div class="card">
                             <img src="images/david.jpg">
