@@ -62,7 +62,7 @@
             letter-spacing: 0.25px;
             font-size: 1vw;
         }
-        .value {display: flex; width: 80%; margin: 2%; justify-content: center;flex-direction: column;}
+        .value {display: flex; width: 50vw; margin: 2%; justify-content: center;flex-direction: column;}
         .value p {width: 50%; line-height: 250%;}
         .value h1 {font-size: 2.5vw;}
 
@@ -91,19 +91,17 @@
             font-style: italic;
         }
         #identity a {
-            background: transparent; 
+            background: #2c2c2c; 
             font-size: 1.5vw; 
-            padding: 1.25% 5%; 
+            padding: 1.25% 2.5%; 
             margin-top: 7.5vh;
-            transition: .2s ease;
-            border: 1px solid white;
+            transition: .1s ease;
             text-decoration: none;
+            border-radius: 25px; 
         }
         #identity a:hover {
-            border-radius: 25px; 
             cursor: pointer;
-            font-weight: bolder;
-            box-shadow: 0 0 80px 5px #000;
+            background: #131313;
         }
     </style>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
@@ -156,7 +154,7 @@
                         Together, we strive towards the pinnacle of motorsport excellence. 
                     </p>
                 </div>
-                <div id="values" style="width: 100vw; display: flex; align-items: center; flex-direction: column;">
+                <div id="values" style="width: 100vw; display: flex; align-items: flex-start; flex-direction: column;">
                     <div class="value">
                         <h1>Respect</h1>
                         <p>
@@ -198,7 +196,7 @@
             </div>
             <div id="identity">
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img src="images/logo.png" style="height: 30vh;filter: invert();">
+                    <img src="images/web logo.svg" style="height: 30vh">
                     <h1>
                         Driven by
                         <span style="color: #da373e">Determination</span>
