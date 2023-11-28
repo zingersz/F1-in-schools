@@ -15,6 +15,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    letter-spacing: 2px;
 }
 
 ::-webkit-scrollbar {display: none}
