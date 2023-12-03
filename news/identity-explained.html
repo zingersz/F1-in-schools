@@ -13,15 +13,11 @@
     <link rel="icon" type="image/x-icon" href="../images/web logo.svg">
     <title>Hoa Sen Motorsports</title>
     <style>
-        h1 {
-            font-size: 2.75vw;
-            width: 95%;
-            margin: 2% 0;
-        }
         #content img {
-            width: 40vw;
+            width: 100%;
             height: auto;
             border-radius: 20px;
+            margin-bottom: 2.5%;
         }
         .caption {
             color: rgba(255, 255, 255, 0.5);
@@ -30,20 +26,25 @@
             font-weight: 300;
             line-height: 150%;
             margin-bottom: 4%;
+            text-align: center;
         }
         .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin: 2.5% 0;
         }
         #content p {
             line-height: 200%;
             margin: 0;
             margin-bottom: 2.5%;
+            font-size: 1vw;
         }
         li {
             margin-bottom: 2.75%;
             color: rgba(255, 255, 255, 0.3);
         }
-        li span {color: white; line-height: 200%;}
+        li span {color: white; line-height: 200%; font-size: 1vw;}
         #content h3 {
             font-size: 1.5vw;
             font-weight: bolder;
@@ -56,6 +57,18 @@
             width: 95%;
         }
         .quote footer {float: right;}
+        @media screen and (max-width: 1368px) {
+            #blog-area {
+                width: 45vw;
+            }
+            #content p {
+                line-height: 150%;
+                margin: 0;
+                margin-bottom: 2.5%;
+                font-weight: 100;
+            }
+            li span {color: white; line-height: 150%;}
+        }
     </style>
 </head>
 <body onload="pageLoad()">
@@ -96,9 +109,11 @@
             </div>
         </div>
         <div id="content" style="display: flex; justify-content: center;">
-            <div style="width: 40vw; display: flex; justify-content: center; flex-direction: column; border-bottom: 1px solid rgba(255, 255, 255, 0.5); padding-top: 5%; padding-bottom: 1.5%;">
+            <div id='blog-area' style="display: flex; justify-content: center; flex-direction: column; border-bottom: 1px solid rgba(255, 255, 255, 0.5); padding-top: 5%; padding-bottom: 1.5%;">
                 <!--Title-->
-                <h1>Unlocking the Hidden Stories behind our branding</h1>
+                <h1 style="font-size: 2.75vw; width: 95%; margin: 2% 0;">
+                    Unlocking the Hidden Stories behind our branding
+                </h1>
                 <h2 style="color: rgba(255, 255, 255, 0.5); font-size: 0.85vw; width: 95%; font-weight: 300; line-height: 150%; margin-bottom: 4%;">
                     Hoa Sen Motorsports goes beyond a mere name; it embodies a rich philosophy that permeates every aspect of our organization, 
                     reflecting a deep appreciation for Vietnamese culture and its symbolism.
@@ -127,7 +142,7 @@
                     We embody the qualities of resilience, adaptability, and unwavering determination, constantly pushing the boundaries of what is possible in motorsports.
                 </p>
                 <div class="image-container">
-                    <img src="images/blogs/passion.jpg">
+                    <img src="../images/blogs/passion.jpg">
                     <p class="caption">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente
                     </p>
@@ -137,11 +152,19 @@
                 </p>
 
                 <h3>The Logo</h3>
-
+                
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente, 
                     minima corrupti dolores necessitatibus suscipit accusantium dignissimos culpa cumque.
                 </p>
+                <div class="image-container">
+                    <img src="../images/web logo.svg">
+                    <p class="caption">
+                        The official Hoa Sen Motorsports logo
+                    </p>
+                </div>
+
+
 
                 <!--Ordered list-->
                 <ol>
@@ -181,18 +204,19 @@
                         conveys a sense of teamwork, cohesion, and the understanding that success is achieved through collective effort.
                     </span></li>
                 </ol>
-                <!--Image-->
-                <div class="image-container">
-                    <img src="images/blogs/passion.jpg">
-                    <p class="caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente</p>
-                </div>
-
-
+                
                 <h3>The Colours</h3>
                 <p>
                     The colours of our brand includes: Red (#da251d), Yellow (#edc967), White (#ffffff), and Black (#000000); each carrying with them symbolism which fully presents our 
                     background and core values. 
                 </p>
+                <!--Image-->
+                <div class="image-container">
+                    <img src="images/blogs/brand-colours.jpg" alt="brand colours">
+                    <p class="caption">
+                        The colour quartet: red, yellow, white, black that makes up Hoa Sen Motorsports' identity. Image source: Hoa Sen Motorsports
+                    </p>
+                </div>
                 <ul>
                     <li><span>We want everything to look good out of the box.</span></li>
                     <li><span>We want everything to look good out of the box.</span></li>
