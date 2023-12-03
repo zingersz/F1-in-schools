@@ -151,9 +151,9 @@ body, html {
 
 @keyframes load {
     0% {border-style: solid; border-color: white;}
-    25% {border-style: solid; border-color: white white #da373e white;}
-    50% {border-style: solid; border-color: white #da373e #da373e #da373e;}
-    100% {border-style: solid; border-color: #da373e;}
+    25% {border-style: solid; border-color: white white #DA251D white;}
+    50% {border-style: solid; border-color: white #DA251D #DA251D #DA251D;}
+    100% {border-style: solid; border-color: #DA251D;}
 }
 
 /* ==================== Socials ==================== */

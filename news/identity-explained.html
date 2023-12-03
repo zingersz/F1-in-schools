@@ -18,14 +18,6 @@
             width: 95%;
             margin: 2% 0;
         }
-        #blurb {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 0.85vw;
-            width: 95%;
-            font-weight: 300;
-            line-height: 150%;
-            margin-bottom: 4%;
-        }
         #content img {
             width: 40vw;
             height: auto;
@@ -51,7 +43,7 @@
             margin-bottom: 2.75%;
             color: rgba(255, 255, 255, 0.3);
         }
-        li span {color: white;}
+        li span {color: white; line-height: 200%;}
         #content h3 {
             font-size: 1.5vw;
             font-weight: bolder;
@@ -61,7 +53,9 @@
             padding-left: 2.5%;
             margin-bottom: 2.5%;
             font-style: italic;
+            width: 95%;
         }
+        .quote footer {float: right;}
     </style>
 </head>
 <body onload="pageLoad()">
@@ -104,26 +98,45 @@
         <div id="content" style="display: flex; justify-content: center;">
             <div style="width: 40vw; display: flex; justify-content: center; flex-direction: column; border-bottom: 1px solid rgba(255, 255, 255, 0.5); padding-top: 5%; padding-bottom: 1.5%;">
                 <!--Title-->
-                <h1>Trending web & landing page designs in 2023</h1>
-                <h2 id="blurb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis tempora obcaecati error ipsum voluptatibus sed adipisci ut maiores nesciunt quam.</h2>
-                <div id="author" style="display: flex; flex-direction: row; border-top: rgba(255, 255, 255, 0.5) 1px solid; padding-top: 2.5%; align-items: center;">
+                <h1>Unlocking the Hidden Stories behind our branding</h1>
+                <h2 style="color: rgba(255, 255, 255, 0.5); font-size: 0.85vw; width: 95%; font-weight: 300; line-height: 150%; margin-bottom: 4%;">
+                    Hoa Sen Motorsports goes beyond a mere name; it embodies a rich philosophy that permeates every aspect of our organization, 
+                    reflecting a deep appreciation for Vietnamese culture and its symbolism.
+                </h2>
+                <div style="display: flex; flex-direction: row; border-top: rgba(255, 255, 255, 0.5) 1px solid; padding-top: 2.5%; align-items: center;">
                     <img src="../images/david.jpg" style="width: 3vw; height: 3vw; border-radius: 100%; margin-right: 1.5%;">
                     
                     <!--Author info-->
                     <div style="display: flex; flex-direction: column;">
-                        <p style="font-weight: bold; margin: 0; font-size: 0.75vw;">David Hong</p>
-                        <p style="margin: 0; margin-top: 5%; font-size: 0.75vw;">September 11, 2023</p>
+                        <p style="font-weight: bold; margin: 0; font-size: 0.75vw;">Rishikesh Dwivedi</p>
+                        <p style="margin: 0; margin-top: 5%; font-size: 0.75vw;">November 6, 2023</p>
                     </div>
                 </div>
 
                 <!--Cover image/thumbnail-->
-                <img style="width: 65vw; border-radius: 10px; transform: translate(-12.5vw); margin: 7.5% 0" src="../images/passion.jpg">
+                <img src="../images/blogs/passion.jpg" style="width: 65vw; border-radius: 10px; transform: translate(-12.5vw); margin: 7.5% 0">
 
-                <!--Paragraph-->
+                <h3>The Name</h3>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente, 
-                    minima corrupti dolores necessitatibus suscipit accusantium dignissimos culpa cumque.
+                    As members of Hoa Sen Motorsports, we take immense pride in every aspect of our brand. The name, "Hoa Sen Motorsports", holds deep significance as it symbolises the lotus 
+                    flower, a sacred and iconic plant in Vietnamese culture, representing purity, resilience, and enlightenment. It reflects our commitment to upholding these values in 
+                    our pursuit of excellence on the racetrack.
                 </p>
+                <p>
+                    Just like the lotus flower, Hoa Sen Motorsports aims to transcend limitations, overcome challenges, and rise to the top. 
+                    We embody the qualities of resilience, adaptability, and unwavering determination, constantly pushing the boundaries of what is possible in motorsports.
+                </p>
+                <div class="image-container">
+                    <img src="images/blogs/passion.jpg">
+                    <p class="caption">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente
+                    </p>
+                </div>
+                <p>
+                    The lotus signifies our commitment to the pursuit of speed, precision, and technical expertise, while also embodies our strong community among employees, fans, and partners.
+                </p>
+
+                <h3>The Logo</h3>
 
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente, 
@@ -138,26 +151,48 @@
                 </ol>
 
                 <!--Header-->
-                <h3>Typography</h3>
+                <h3>The Slogan</h3>
 
                 <!--Quotes-->
                 <div class="quote">
-                    <p>Inspirational quote</p>
-                    <footer>--Author, <cite>job</cite></footer>
-                </div>
-
-                <!--Image-->
-                <div class="image-container">
-                    <img src="../images/passion.jpg">
-                    <p class="caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente</p>
+                    <p>
+                        Driven by <span style="color: #DA251D; font-weight: 900;">Determination</span>, 
+                        Fuelled by <span style="color: #edc967; font-weight: 900;">Passion</span>, 
+                        United in <span style="color: lightgray; font-weight: 900;">Respect</span>
+                    </p>
+                    <footer>--Hoa Sen Motorsports, <cite>a student F1 team</cite></footer>
                 </div>
 
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente, 
-                    minima corrupti dolores necessitatibus suscipit accusantium dignissimos culpa cumque.
+                    Our slogan is a powerful and impactful statement that encapsulates our core values and principles. It is designed to communicate the team's strong sense of purpose, 
+                    motivation, and collaboration, capturing the essence of our aspirations:
                 </p>
+                <ol>
+                    <li><span>
+                        "Driven by Determination": This phrase highlights our relentless pursuit of goals and the unwavering commitment to success. 
+                        It conveys a strong sense of focus, ambition, and the willingness to overcome obstacles and challenges along the way.
+                    </span></li>
+                    <li><span>
+                        "Fuelled with Passion": The work of Hoa Sen is not solely driven by external factors or obligations but by a genuine passion and genuine enjoyment for what we do. 
+                        This part of the slogan emphasizes that intense enthusiasm, love, and dedication that the individuals within the  team have for their craft or mission.
+                    </span></li>
+                    <li><span>
+                        "United in Respect": Despite differences in roles, backgrounds, or perspectives, everyone here recognizes and values each other's contributions. This last phrase 
+                        conveys a sense of teamwork, cohesion, and the understanding that success is achieved through collective effort.
+                    </span></li>
+                </ol>
+                <!--Image-->
+                <div class="image-container">
+                    <img src="images/blogs/passion.jpg">
+                    <p class="caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente</p>
+                </div>
 
-                <!--Unordered list-->
+
+                <h3>The Colours</h3>
+                <p>
+                    The colours of our brand includes: Red (#da251d), Yellow (#edc967), White (#ffffff), and Black (#000000); each carrying with them symbolism which fully presents our 
+                    background and core values. 
+                </p>
                 <ul>
                     <li><span>We want everything to look good out of the box.</span></li>
                     <li><span>We want everything to look good out of the box.</span></li>
