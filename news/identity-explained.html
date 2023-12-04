@@ -19,6 +19,8 @@
             border-radius: 20px;
             margin-bottom: 2.5%;
         }
+        #thumbnail {transform: translate(-12.5vw); width: 65vw;}
+        #blog-area {width: 40vw;}
         .caption {
             color: rgba(255, 255, 255, 0.5);
             font-size: 0.85vw;
@@ -63,11 +65,10 @@
             }
             #content p {
                 line-height: 150%;
-                margin: 0;
-                margin-bottom: 2.5%;
                 font-weight: 100;
             }
-            li span {color: white; line-height: 150%;}
+            li span {line-height: 150%;}
+            #thumbnail {transform: translate(-7.5vw); width: 65vw;}
         }
     </style>
 </head>
@@ -110,6 +111,7 @@
         </div>
         <div id="content" style="display: flex; justify-content: center;">
             <div id='blog-area' style="display: flex; justify-content: center; flex-direction: column; border-bottom: 1px solid rgba(255, 255, 255, 0.5); padding-top: 5%; padding-bottom: 1.5%;">
+                
                 <!--Title-->
                 <h1 style="font-size: 2.75vw; width: 95%; margin: 2% 0;">
                     Unlocking the Hidden Stories behind our branding
@@ -129,7 +131,7 @@
                 </div>
 
                 <!--Cover image/thumbnail-->
-                <img src="../images/blogs/passion.jpg" style="width: 65vw; border-radius: 10px; transform: translate(-12.5vw); margin: 7.5% 0">
+                <img id='thumbnail' src="../images/blog/identity thumbnail.png" style="border-radius: 10px; margin: 7.5% 0">
 
                 <h3>The Name</h3>
                 <p>
@@ -142,16 +144,17 @@
                     We embody the qualities of resilience, adaptability, and unwavering determination, constantly pushing the boundaries of what is possible in motorsports.
                 </p>
                 <div class="image-container">
-                    <img src="../images/blogs/passion.jpg">
+                    <img src="../images/blog/passion.jpg">
                     <p class="caption">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente
                     </p>
                 </div>
-                <p>
-                    The lotus signifies our commitment to the pursuit of speed, precision, and technical expertise, while also embodies our strong community among employees, fans, and partners.
-                </p>
-
+                
                 <h3>The Logo</h3>
+                <p>
+                    The lotus logo signifies our commitment to the pursuit of speed, precision, and technical expertise, 
+                    while also embodies our strong community among employees, fans, and partners.
+                </p>
                 
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente, 
@@ -160,11 +163,9 @@
                 <div class="image-container">
                     <img src="../images/web logo.svg">
                     <p class="caption">
-                        The official Hoa Sen Motorsports logo
+                        The official Hoa Sen Motorsports logo. Source: Hoa Sen Motorsports
                     </p>
                 </div>
-
-
 
                 <!--Ordered list-->
                 <ol>
@@ -183,7 +184,7 @@
                         Fuelled by <span style="color: #edc967; font-weight: 900;">Passion</span>, 
                         United in <span style="color: lightgray; font-weight: 900;">Respect</span>
                     </p>
-                    <footer>--Hoa Sen Motorsports, <cite>a student F1 team</cite></footer>
+                    <footer>&mdash;Hoa Sen Motorsports, <cite>a student F1 team</cite></footer>
                 </div>
 
                 <p>
@@ -214,14 +215,26 @@
                 <div class="image-container">
                     <img src="../images/blog/colours.png" alt="brand colours">
                     <p class="caption">
-                        The colour quartet: red, yellow, white, black that makes up Hoa Sen Motorsports' identity. Image source: Hoa Sen Motorsports
+                        The colour quartet: red, yellow, white, black that makes up Hoa Sen Motorsports' identity. Source: Hoa Sen Motorsports
                     </p>
                 </div>
                 <ul>
-                    <li><span>We want everything to look good out of the box.</span></li>
-                    <li><span>We want everything to look good out of the box.</span></li>
-                    <li><span>We want everything to look good out of the box.</span></li>
-                    <li><span>We want everything to look good out of the box.</span></li>
+                    <li><span>
+                        Red &mdash; Red is a significant color in Vietnamese culture and symbolizes luck, happiness, and 
+                        celebration. It also symbolises our burning passion and vibrant energy.
+                    </span></li>
+                    <li><span>
+                        Yellow &mdash; Yellow adds a touch of opulence and sophistication to our branding, encompassing
+                        our goals of being elegant and prestige. It is also the colour of the star in the center of 
+                        our country's flag.
+                    </span></li>
+                    <li><span>
+                        Black &mdash; Black represents our brand's elegance and formality. 
+                    </span></li>
+                    <li><span>
+                        White &mdash; White serves mainly as the logo's colour; the white lotus represents purity, 
+                        simplicity, and pristine.
+                    </span></li>
                 </ul>
             </div>
         </div>
