@@ -14,10 +14,13 @@
     <title>Hoa Sen Motorsports</title>
     <style>
         #content img {
-            width: 40vw;
+            width: 100%;
             height: auto;
             border-radius: 20px;
+            margin-bottom: 2.5%;
         }
+        #thumbnail {transform: translate(-12.5vw)}
+        #blog-area {width: 40vw;}
         .caption {
             color: rgba(255, 255, 255, 0.5);
             font-size: 0.85vw;
@@ -25,20 +28,26 @@
             font-weight: 300;
             line-height: 150%;
             margin-bottom: 4%;
+            text-align: center;
         }
         .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             margin: 2.5% 0;
         }
         #content p {
             line-height: 200%;
             margin: 0;
             margin-bottom: 2.5%;
+            font-size: 1vw;
+            font-weight: 100;
         }
         li {
             margin-bottom: 2.75%;
             color: rgba(255, 255, 255, 0.3);
         }
-        li span {color: white; line-height: 200%;}
+        li span {color: white; line-height: 200%; font-size: 1vw;}
         #content h3 {
             font-size: 1.5vw;
             font-weight: bolder;
@@ -51,6 +60,16 @@
             width: 95%;
         }
         .quote footer {float: right;}
+        @media screen and (max-width: 1368px) {
+            #blog-area {
+                width: 45vw;
+            }
+            #content p {
+                line-height: 150%;
+            }
+            li span {line-height: 150%;}
+            #thumbnail {transform: translate(-7.5vw)}
+        }
     </style>
 </head>
 <body onload="pageLoad()">
@@ -91,7 +110,8 @@
             </div>
         </div>
         <div id="content" style="display: flex; justify-content: center;">
-            <div style="width: 40vw; display: flex; justify-content: center; flex-direction: column; border-bottom: 1px solid rgba(255, 255, 255, 0.5); padding-top: 5%; padding-bottom: 1.5%;">
+            <div id='blog-area' style="display: flex; justify-content: center; flex-direction: column; border-bottom: 1px solid rgba(255, 255, 255, 0.5); padding-top: 5%; padding-bottom: 1.5%; margin-bottom: 5%;">
+                
                 <!--Title-->
                 <h1 style="font-size: 2.75vw; width: 95%; margin: 2% 0;">
                     Trending web & landing page designs in 2023
@@ -105,25 +125,27 @@
                     
                     <!--Author info-->
                     <div style="display: flex; flex-direction: column;">
-                        <p style="font-weight: bold; margin: 0; font-size: 0.75vw;">David Hong</p>
-                        <p style="margin: 0; margin-top: 5%; font-size: 0.75vw;">September 11, 2023</p>
+                        <p style="font-weight: bold; margin: 0; font-size: 0.75vw;">Rishikesh Dwivedi</p>
+                        <p style="margin: 0; margin-top: 5%; font-size: 0.75vw;">November 6, 2023</p>
                     </div>
                 </div>
 
                 <!--Cover image/thumbnail-->
-                <img src="../images/blog/passion.jpg" style="width: 65vw; border-radius: 10px; transform: translate(-12.5vw); margin: 7.5% 0">
+                <img id='thumbnail' src="../images/blog/identity thumbnail.png" style="border-radius: 10px; margin: 7.5% 0; width: 65vw;">
+
+                <!--Header-->
+                <h3>Header 1</h3>
 
                 <!--Paragraph-->
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente, 
                     minima corrupti dolores necessitatibus suscipit accusantium dignissimos culpa cumque.
                 </p>
-
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente, 
                     minima corrupti dolores necessitatibus suscipit accusantium dignissimos culpa cumque.
                 </p>
-
+                
                 <!--Ordered list-->
                 <ol>
                     <li><span>We want everything to look good out of the box.</span></li>
@@ -131,19 +153,20 @@
                     <li><span>We want everything to look good out of the box.</span></li>
                 </ol>
 
-                <!--Header-->
-                <h3>Typography</h3>
-
+                <h3>Header 2</h3>
+                
                 <!--Quotes-->
                 <div class="quote">
                     <p>Inspirational quote</p>
                     <footer>&mdash;Author, <cite>job</cite></footer>
                 </div>
-
+                
                 <!--Image-->
                 <div class="image-container">
-                    <img src="images/blog/passion.jpg">
-                    <p class="caption">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel officiis ipsum placeat itaque neque dolorem modi perspiciatis dolor distinctio veritatis sapiente</p>
+                    <img src="../images/blog/colours.png">
+                    <p class="caption">
+                        Brief image description. Source: source
+                    </p>
                 </div>
 
                 <p>

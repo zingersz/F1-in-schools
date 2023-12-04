@@ -55,7 +55,7 @@ body, html {
 #logo-top {
     top: 50%;
     left: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-75%, -50%);
     position: absolute;
     height: 70%;
 }
@@ -221,3 +221,17 @@ body, html {
 }
   
 #web-page {display: none;}
+
+/* ================================================= */
+/* ==================== Fancy ====================== */
+/* ================================================= */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}

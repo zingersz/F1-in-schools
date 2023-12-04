@@ -45,6 +45,7 @@
         .card img {height: 100%; width: 40%;}
         .card h4 {font-weight: lighter; font-size: 1vw; color: rgba(245, 245, 245,0.6);}
         .card h1 {font-size:1.75vw}
+
         #ethos-summary h1 {
             text-align: center;
             font-size: 5vh;
@@ -69,11 +70,9 @@
         #identity {
             background-color: #212121;
             display: flex;
-            width: 100vw;
             align-items: center;
             padding: 15vh 0;
             flex-direction: column;
-            border-bottom: 2px solid;
             border-top: 2px solid;
             border-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.25), transparent) 10;
         }
@@ -101,9 +100,12 @@
             color: rgba(255, 255, 255, 0.5);
         }
         #identity a:hover {
-            cursor: pointer;
             background: #131313;
             color: white;
+        }
+
+        #story {
+            
         }
     </style>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
@@ -147,7 +149,7 @@
             </div>
         </div>
         <div id="content">
-            <div id="ethos" style="width: 100%; padding: 5vh 0 10vh;">
+            <div id="ethos" style="padding: 5vh 0 10vh;">
                 <div id="ethos-summary" style="width: 100vw; display: flex; flex-direction: column; align-items: center;">
                     <h1>OUR VALUES</h1>
                     <p>
@@ -196,6 +198,7 @@
                     </div>
                 </div>
             </div>
+
             <div id="identity">
                 <div style="display: flex; justify-content: center; align-items: center;">
                     <img src="images/web logo.svg" style="height: 30vh">
@@ -210,7 +213,22 @@
                 </div>
                 <a href="news/identity-explained.html">More about our identity</a>
             </div>
-            <div id="team" style="width: 100vw; align-items: center; display: flex; padding: 5vh 0;">
+            
+            <div id="story" style="display: flex; justify-content: center; align-items: center; background-color: #131313">
+                <img src="images/school.jpg" style="width: 50vw; height: auto;">
+                <div style="display:flex; width: 50vw; justify-content: center; flex-direction: column; align-items: flex-end;">
+                    <h1 style="padding-right: 5vw; font-size: 3vw;">The Hoa Sen Story</h1>
+                    <p style="text-align: right; padding-right: 5vw; line-height: 200%; width: 75%;">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor molestie massa, non mattis elit ultricies quis. In interdum mi luctus ipsum fringilla, 
+                        nec dignissim leo imperdiet. Morbi quis ultrices ligula, eget sodales libero. Integer dictum metus ut nunc dapibus laoreet. Phasellus ligula nisl, condimentum 
+                        at tincidunt gravida, convallis sagittis lorem. Integer sit amet ex semper, imperdiet urna aliquam, venenatis erat. Duis velit nisi, volutpat eu mauris ac, 
+                        sodales ultrices elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed et magna et dui luctus tempor sit amet quis dolor. 
+                        Aliquam libero eros, pretium elementum ligula ut, tincidunt condimentum purus. Suspendisse tortor nisi, feugiat et sem vel, accumsan laoreet dolor.
+                    </p>
+                </div>
+            </div>
+
+            <div id="team" style="align-items: center; display: flex; padding: 15vh 0">
                 <h1 id="team-text">MEET THE TEAM</h1>
                 <div id="team-members" style="flex-direction: column; display: flex; flex: 1; justify-content: center;">
                     <div class="row">
@@ -255,6 +273,16 @@
                 </div>
             </div>
         </div>
+
+        <div style="display:flex; bottom: 0; left: 0; background-color: black;">
+            <div class="footer-info">
+                <img src="images/web logo.svg" width="150px">
+            </div>
+            <div class="footer-info"></div>
+            <div class="footer-info"></div>
+            <div class="footer-info"></div>
+        </div>
     </div>
+
 </body>
 </html>
