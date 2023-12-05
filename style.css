@@ -18,6 +18,8 @@ body, html {
     letter-spacing: 2px;
 }
 
+a {text-decoration: none;}
+
 ::-webkit-scrollbar {display: none}
 
 /* ================================================= */
@@ -108,7 +110,6 @@ body, html {
 #side-mid a {
     padding: 0 .5vmax;
     margin: 1.5vmax 1.5vmax;
-    text-decoration: none;
     font-size: 1.25vmax;
     color: #969696;
     display: block;
