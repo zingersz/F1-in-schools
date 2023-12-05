@@ -17,7 +17,6 @@
             font-size: 4.5vw;
             padding: 7vh 5vw;
             display: flex;
-            letter-spacing: -2px;
             max-width: 12.5vw;
         }
         .row {
@@ -64,7 +63,7 @@
             font-size: 1vw;
         }
         .value {display: flex; width: 50vw; margin: 2%; justify-content: center;flex-direction: column;}
-        .value p {width: 50%; line-height: 250%;}
+        .value p {width: 75%; line-height: 250%; font-size: 1vw;}
         .value h1 {font-size: 2.5vw;}
 
         #identity {
@@ -106,6 +105,13 @@
 
         #story {
             
+        }
+
+        .footer-info {
+            display: flex;
+            width: 20vw;
+            margin: 10vh 2vw;
+            flex-direction: column;
         }
     </style>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
@@ -151,7 +157,7 @@
         <div id="content">
             <div id="ethos" style="padding: 5vh 0 10vh;">
                 <div id="ethos-summary" style="width: 100vw; display: flex; flex-direction: column; align-items: center;">
-                    <h1>OUR VALUES</h1>
+                    <h1>Our Values</h1>
                     <p>
                         At Hoa Sen, our commitment to unity, our relentless pursuit of enhancement, and our collaborative spirit are our guiding principles. 
                         Our success is a testament to the synergy of our collective effort, where the whole is indeed greater than the sum of its parts. 
@@ -215,10 +221,10 @@
             </div>
             
             <div id="story" style="display: flex; justify-content: center; align-items: center; background-color: #131313">
-                <img src="images/school.jpg" style="width: 50vw; height: auto;">
+                <img src="images/school.jpg" style="display:flex; width: 50vw; height: 100%;">
                 <div style="display:flex; width: 50vw; justify-content: center; flex-direction: column; align-items: flex-end;">
                     <h1 style="padding-right: 5vw; font-size: 3vw;">The Hoa Sen Story</h1>
-                    <p style="text-align: right; padding-right: 5vw; line-height: 200%; width: 75%;">
+                    <p style="font-size: 1vw; text-align: right; padding-right: 5vw; line-height: 200%; width: 75%;">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempor molestie massa, non mattis elit ultricies quis. In interdum mi luctus ipsum fringilla, 
                         nec dignissim leo imperdiet. Morbi quis ultrices ligula, eget sodales libero. Integer dictum metus ut nunc dapibus laoreet. Phasellus ligula nisl, condimentum 
                         at tincidunt gravida, convallis sagittis lorem. Integer sit amet ex semper, imperdiet urna aliquam, venenatis erat. Duis velit nisi, volutpat eu mauris ac, 
@@ -228,8 +234,8 @@
                 </div>
             </div>
 
-            <div id="team" style="align-items: center; display: flex; padding: 15vh 0">
-                <h1 id="team-text">MEET THE TEAM</h1>
+            <div id="team" style="align-items: center; display: flex; padding: 12.5vh 0">
+                <h1 id="team-text">Meet The Team</h1>
                 <div id="team-members" style="flex-direction: column; display: flex; flex: 1; justify-content: center;">
                     <div class="row">
                         <div class="card">
@@ -274,9 +280,23 @@
             </div>
         </div>
 
-        <div style="display:flex; bottom: 0; left: 0; background-color: black;">
+        <div style="display:flex; bottom: 0; left: 0; background-color: black; justify-content: center; align-items: center;">
             <div class="footer-info">
                 <img src="images/web logo.svg" width="150px">
+                <p style="color: rgba(255, 255, 255, 0.5); font-size: 1vw; line-height: 200%; margin-top: 5vh;">
+                    An F1 in Schools competitor from Ho Chi Minh City, Viet Nam
+                </p>
+                <address style="color: rgba(255, 255, 255, 0.5); font-size: 1vw; margin-top: 2.5vh; line-height: 200%;">
+                    246 Nguyen Van Huong Street,<br>
+                    Thao Dien Ward, Thu Duc City,<br>
+                    Ho Chi Minh City, Vietnam
+                </address>
+                <div style="margin-top: 7.5vh;">
+                    <a href="#"><i class="fa-brands fa-facebook fa-xl" style="color: lightgrey;"></i></a>
+                    <a href="https://www.instagram.com/official_hsracing/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: lightgrey;"></i></a>
+                    <a href="https://www.youtube.com/@HoaSenMotorsports" target="_blank"><i class="fa-brands fa-youtube fa-xl" style="color: lightgrey;"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter fa-xl" style="color: lightgrey;"></i></a>
+                </div>
             </div>
             <div class="footer-info"></div>
             <div class="footer-info"></div>
