@@ -216,4 +216,17 @@ a {text-decoration: none;}
     to{opacity:1}
 }
   
-#web-page {display: none;}
+#web-page {display: none}
+
+
+/* ================================================= */
+/* ==================== Footer ===================== */
+/* ================================================= */
+.footer-info {
+    display: flex;
+    margin: 10vh 5vw;
+    flex-direction: column;
+    height: 100%;
+}
+.footer-info a {color: rgba(255, 255, 255, 0.5); margin-bottom: 2vh;}
+.footer-info a:hover {color: white; text-decoration: underline;}
