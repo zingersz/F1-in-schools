@@ -12,6 +12,17 @@
     <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="images/web logo.svg">
     <title>Hoa Sen Motorsports</title>
+    <style>
+        input, select, textarea {
+            width: 95%;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 0.5rem;
+            padding: 1vh;
+        }
+    </style>
 </head>
 <body onload="pageLoad()">
     <img id="loader" src="images/web logo.svg">
@@ -51,14 +62,45 @@
             </div>
         </div>
         <div id="content">
-            <p>asd</p>
-            <p>asd</p>
-            <p>asd</p>
-            <p>asd</p>
-            <p>asd</p>
-            <p>asd</p>
-            <p>asd</p>
-            <p>asd</p>
+            <div style="display: flex; justify-content: center; align-items: center">
+                <video autoplay muted loop style="position: relative; right: 0; bottom: 0; min-width: 100vw; height: 95vh; object-fit: cover;">
+                    <source src="videos/random.mp4" type="video/mp4">
+                </video>
+                <div style="background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(15px) saturate(180%); position: absolute; width: 80vw; height: 70vh; border-radius: 1rem; overflow: hidden; display: flex;">
+                    <div style="display:flex; width: 50%; height: 100%; justify-content: center; align-items: center;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.056292092815!2d106.7304248!3d10.8102337!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317526221532bb79%3A0x7310917ee4edb50!2sBIS%20HCMC%2C%20Secondary%20Campus!5e0!3m2!1sen!2s!4v1702129308471!5m2!1sen!2s" 
+                            style="border-radius: 0.75rem; border:0; width: 90%; height: 90%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div style="display:flex; width: 50%; height: 100%; justify-content: center; align-items: center;">
+                        <form action="server/" method="post" style="width: 90%;">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Ola" style="width: 30%;">
+
+                            <label for="lname" >Last Name</label>
+                            <input type="text" id="sname" name="lastname" placeholder="Källenius" style="width: 30%;">
+
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Mercedes Benz">
+
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" name="email" placeholder="example@gmail.com">
+
+                            <label for="purpose">Purpose</label>
+                            <select id="purpose" name="purpose">
+                                <option value="australia">Product or Service Inquiry</option>
+                                <option value="canada">Partnership and Collaboration</option>
+                            </select>
+
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something..." style="height:5vh"></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <div style="display:flex; bottom: 0; left: 0; background-color: black; justify-content: center; ">
