@@ -74,12 +74,12 @@
             letter-spacing: 3px;
             text-align: start; 
             font-size: 3vw;
-            font-family: 'Italiana', sans-serif; 
+            font-family: 'Copper Gothic', sans-serif; 
             font-weight: light; 
             font-style: italic;
         }
         #identity span {
-            font-family: 'Italiana', sans-serif;
+            font-family: 'Copper Gothic', sans-serif;
             font-style: italic;
         }
         #identity a {
@@ -95,22 +95,26 @@
             background: #131313;
             color: white;
         }
+        @font-face {
+        font-family: "Copper Gothic";
+        src: url('media/fonts/copperplate-gothic/Copperplate\ Gothic\ Bold\ Regular.ttf');
+        }
     </style>
-    <link rel="icon" type="image/x-icon" href="images/web logo.svg">
+    <link rel="icon" type="image/x-icon" href="media/images/web logo.svg">
     <title>Hoa Sen Motorsports</title>
 </head>
 <body onload="pageLoad()">
-    <img id="loader" src="images/web logo.svg">
+    <img id="loader" src="media/images/web logo.svg">
     <div id="web-page" class="web">
         <div id="top-bar">
             <span class="material-symbols-outlined" id="openNav" onclick="openNav()">menu</span>
             <div id="brand-name">Hoa Sen Motorsports</div>
-            <img id="logo-top" src="images/web logo.svg">
+            <img id="logo-top" src="media/images/web logo.svg">
         </div>
 
         <div id="sidenav" class="sidenav">
             <div id="side-left">
-                <img src="images/web logo.svg">
+                <img src="media/images/web logo.svg">
                 <button class="spin closebtn" onclick="closeNav()">X</button>
                 <div id="socials-box">
                     <div class="social-row">
@@ -134,7 +138,7 @@
                 <a href="partners.html">Partners</a>
             </div>
             <div id="side-right">
-                <img width="100%" height="100%" src="images/placeholder.avif">
+                <img width="100%" height="100%" src="media/images/placeholder.avif">
             </div>
         </div>
 
@@ -159,10 +163,10 @@
                                 contribute to the team's overall success in the long term.
                             </p>
                         </div>
-                        <img src="images/blog/identity thumbnail.png" style="margin-left: 5vw;">
+                        <img src="media/images/blog/identity thumbnail.png" style="margin-left: 5vw;">
                     </div>
                     <div class="value-row">
-                        <img src="images/blog/identity thumbnail.png" style="margin-right: 5vw;">
+                        <img src="media/images/blog/identity thumbnail.png" style="margin-right: 5vw;">
                         <div class="value">
                             <h1>Passion</h1>
                             <p>
@@ -184,10 +188,10 @@
                                 participate; we are here to dominate.
                             </p>
                         </div>
-                        <img src="images/blog/identity thumbnail.png" style="margin-left: 5vw;">
+                        <img src="media/images/blog/identity thumbnail.png" style="margin-left: 5vw;">
                     </div>
                     <div class="value-row">
-                        <img src="images/blog/identity thumbnail.png" style="margin-right: 5vw;">
+                        <img src="media/images/blog/identity thumbnail.png" style="margin-right: 5vw;">
                         <div class="value">
                             <h1>Humility</h1>
                             <p>
@@ -203,7 +207,7 @@
 
             <div id="identity">
                 <div style="display: flex; justify-content: center; align-items: center;">
-                    <img src="images/web logo.svg" style="height: 30vh">
+                    <img src="media/images/web logo.svg" style="height: 30vh">
                     <h1>
                         Driven by
                         <span style="color: #DA251D">Determination</span>
@@ -217,7 +221,7 @@
             </div>
             
             <div id="story" style="display: flex; justify-content: center; align-items: center; background-color: #131313">
-                <img src="images/school.jpg" style="display:flex; width: 50vw; height: 100%;">
+                <img src="media/images/school.jpg" style="display:flex; width: 50vw; height: 100%;">
                 <div style="display:flex; width: 50vw; justify-content: center; flex-direction: column; align-items: flex-end;">
                     <h1 style="padding-right: 5vw; font-size: 3vw;">The Hoa Sen Story</h1>
                     <p style="font-size: 1vw; text-align: right; padding-right: 5vw; line-height: 200%; width: 75%;">
@@ -237,21 +241,21 @@
                 <div style="flex-direction: column; display: flex; flex: 1; justify-content: center;">
                     <div class="row">
                         <div class="card">
-                            <img src="images/david.jpg">
+                            <img src="media/images/david.jpg">
                             <div class="card-content">
                                 <h4>Manager</h4>
                                 <h1>David</h1>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="images/me.jpg">
+                            <img src="media/images/me.jpg">
                             <div class="card-content">
                                 <h4>Engineer</h4>
                                 <h1>Anh Tuan</h1>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="images/me.jpg">
+                            <img src="media/images/me.jpg">
                             <div class="card-content">
                                 <h4>Design Engineer</h4>
                                 <h1>Taegyu</h1>
@@ -260,14 +264,14 @@
                     </div>
                     <div class="row">
                         <div class="card">
-                            <img src="images/me.jpg">
+                            <img src="media/images/me.jpg">
                             <div class="card-content">
                                 <h4>Designer</h4>
                                 <h1>Rishikesh</h1>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="images/me.jpg">
+                            <img src="media/images/me.jpg">
                             <div class="card-content">
                                 <h4>Strategist</h4>
                                 <h1>Gia Phu</h1>
@@ -280,7 +284,7 @@
 
         <div style="display:flex; bottom: 0; left: 0; background-color: black; justify-content: center; ">
             <div class="footer-info">
-                <img src="images/web logo.svg" width="150px">
+                <img src="media/images/web logo.svg" width="150px">
                 <p style="color: rgba(255, 255, 255, 0.5); font-size: 1vw; line-height: 200%; margin-top: 2vh;">
                     An F1 in Schools competitor<br>Ho Chi Minh City, Viet Nam
                 </p>
