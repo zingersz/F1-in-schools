@@ -109,7 +109,7 @@ a {text-decoration: none;}
 }
 #side-mid a {
     padding: 0 .5vmax;
-    margin: 1.5vmax 1.5vmax;
+    margin: 3vh 1.5vw;
     font-size: 1.25vmax;
     color: #969696;
     display: block;
