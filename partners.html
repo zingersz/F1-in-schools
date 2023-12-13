@@ -11,6 +11,43 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="icon" type="image/x-icon" href="media/images/web logo.svg">
+    <style>
+        #op {opacity: 0.5; background-color: #2c2c2c;}
+        #op:hover {
+            opacity: 1;
+            background-color: #131313;
+            border: 1px solid white;
+        }
+
+        .option {
+            display: flex;
+            width: 22.5vw;
+            margin: 5vh 2vw;
+            border: 3px solid;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 1rem;
+            height: fit-content;
+            padding: 2.5vh 0;
+        }
+
+        .option p {
+            margin: 1vh 0;
+        }
+        #social-link {opacity: 0.3;}
+        #social-link:hover {text-decoration: underline;opacity: 1;}
+
+        .rank {
+            border-right: 5px solid;
+            padding: 5vh 0;
+            margin: 2vh 2vw;
+        }
+
+        .rank img {
+            height: 5vh;
+        }
+    </style>
     <title>Hoa Sen Motorsports</title>
 </head>
 <body onload="pageLoad()">
@@ -53,24 +90,76 @@
         <div id="content">
 
             <div style="display: flex; height: 50vh; width: 100vw">
-                <div style="display: flex; flex-direction: column; width: 40vw; padding: 5vh 7.5vw">
+                <div style="display: flex; flex-direction: column; width: 30vw; padding: 5vh 7.5vw">
                     <h4 style="opacity: .3; margin: 0">BECOME A HOA SEN PARTNER</h4>
-                    <h1 style="margin: 2vh 0vw 3vh;">Promote<br>Hoa Sen Motorsports</h1>
-                    <p>
-                        Become a Hoa Sen Motorsports Partner.<br>Join our own partner program to promote 
+                    <h1 style="margin: 2vh 0 2vh; font-size: 2vw;">Promote<br>Hoa Sen Motorsports</h1>
+                    <p style="line-height: 200%;">
+                        Join our own partner program to promote 
                         the most advanced Hoa Sen ecosystem.
                     </p>
-                    <a href="#options" style="border: 1px solid white; width: fit-content; padding: 1.5vh 3vw; border-radius: 1rem; margin-top: 6.5vh;">
+                    <a href="#options" id="op" style="width: fit-content; padding: 1.5vh 3vw; border-radius: 1rem; margin-top: 5vh;">
                         Tell me more
                     </a>
                 </div>
-                <img src="media/images/hoa sen partners.png" style="width: 60vw;">
+                <img src="media/images/hoa sen partners.png" style="width: 70vw;">
             </div>
 
-            <div id="options" style="background-color: #212121; display: flex; justify-content: center; align-items: center;">
-                <div>Bronze</div>
-                <div>Gold</div>
-                <div>Silver</div>
+            <div style="background-color: #212121; display: flex; flex-direction: column; align-items: center;">
+                <h1 style="font-size: 3vw; margin: 5vh 0;">Our Sponsorships Offerings</h1>
+                <div id="options" style="display: flex; justify-content: center; align-items: flex-end;">
+                    <div class="option" style="border-color: white; box-shadow: 0 0 30px 10px white inset, 0 0 15px 5px white; background-color: #ffffff1a;">
+                        <h1 style="font-size: 2vw; margin-bottom: 3vh">Sen Trắng</h1>
+                        <p>offering</p>
+                        <p>offering</p>
+                        <p>offering</p>
+                        <p>offering</p>
+                        <p>offering</p>
+                    </div>
+                    <div class="option" style="border-color: #edc967; box-shadow: 0 0 30px 10px #edc967 inset, 0 0 15px 5px #edc967; background-color: #edc9671a;">
+                        <h1 style="font-size: 2vw; margin-bottom: 3vh">Sen Vàng</h1>
+                        <p>offering</p>
+                        <p>offering</p>
+                        <p>offering</p>
+                        <p>offering</p>
+                        <p>offering</p>
+                        <p>offering</p>
+                        <p>offering</p>
+                    </div>
+                    <div class="option" style="border-color: #DA251D; box-shadow: 0 0 30px 10px #DA251D inset, 0 0 15px 5px #DA251D; background-color: #DA251D1a;">
+                        <h1 style="font-size: 2vw; margin-bottom: 3vh">Sen Đỏ</h1>
+                        <p>offering</p>
+                        <p>offering</p>
+                        <p>offering</p>
+                    </div>
+                </div>
+                <h2 style="margin: 5vh 0; font-size: 1vw;">Or support us individually by following our <a href="contact.html" id="social-link">#social-media</a></h2>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <div style="width: 75vw;">
+                    <div class="rank" style="border-color: #edc967;">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                    </div>
+                    <div class="rank" style="border-color: white;">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                    </div>
+                    <div class="rank" style="border-color: #DA251D;">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                        <img src="media/images/sponsors/">
+                    </div>
+                </div>
+                <h1 style="justify-self: end; font-size: 3vw; text-align: right; padding-right: 4vw;">The Hoa Sen Ecosystem</h1>
             </div>
 
         </div>
