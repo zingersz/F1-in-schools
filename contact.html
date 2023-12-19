@@ -15,8 +15,8 @@
     <style>
         input, select, textarea {
             width: 95%;
-            margin-top: 6px;
-            margin-bottom: 16px;
+            margin-top: .25vh;
+            margin-bottom: 1vh;
             background-color: transparent;
             border: 1px solid rgba(255, 255, 255, 0.25);
             border-radius: 0.5rem;
@@ -37,6 +37,16 @@
             height: 30%;
             width: 80%;
             margin: 5% 0;
+        }
+
+        .required::after {
+            content: ' *';
+            color: red;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        label {
+            font-size: 1vw;
         }
     </style>
 </head>
@@ -95,30 +105,30 @@
                         <form action="server/" method="post" style="width: 90%;">
                             <div style="display:flex; width: 100%">
                                 <div style="width: 45%; margin-right: 5%;">
-                                    <label for="fname">First Name</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name" style="width: 100%;">
+                                    <label class="required" for="fname">First Name</label>
+                                    <input type="text" id="fname" name="firstname" placeholder="Enter your first name" style="width: 100%;" required>
                                 </div>
                                 <div style="width: 45%;">
-                                    <label for="lname">Last Name</label>
-                                    <input type="text" id="sname" name="lastname" placeholder="Enter your last name" style="width: 100%;">
+                                    <label class="required" for="lname">Last Name</label>
+                                    <input type="text" id="sname" name="lastname" placeholder="Enter your last name" style="width: 100%;" required>
                                 </div>
                             </div>
 
                             <label for="company">Company Name</label>
                             <input type="text" id="company" name="company" placeholder="Enter your company's name">
 
-                            <label for="email">Email Address</label>
-                            <input type="text" id="email" name="email" placeholder="example@gmail.com">
+                            <label class="required" for="email">Email Address</label>
+                            <input type="text" id="email" name="email" placeholder="example@gmail.com" required>
 
-                            <label for="purpose">Purpose</label>
-                            <select id="purpose" name="purpose" style="width: 98%;">
+                            <label class="required" for="purpose">Purpose</label>
+                            <select id="purpose" name="purpose" style="width: 98%;" required>
                                 <option value="australia">Product or Service Inquiry</option>
                                 <option value="canada">Partnership and Collaboration</option>
                                 <option value="canada">Others</option>
                             </select>
 
-                            <label for="subject">Subject</label>
-                            <textarea id="subject" name="subject" placeholder="Write something..." style="height:5vh"></textarea>
+                            <label class="required" for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something..." style="height:5vh" required></textarea>
 
                             <input type="submit" value="Submit" style="width: 98%;">
                         </form>
